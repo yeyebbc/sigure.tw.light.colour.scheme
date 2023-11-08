@@ -36,6 +36,20 @@ nav.menu > ul ul {
 input#gsc-i-id1 {
   margin-left: 10px !important;
 }
+nav.menu {
+  height: 76px;
+}
+nav.menu > ul {
+  width: 100%;
+  max-width: 80rem;
+  height: 100%;
+  border-radius: 0 0 14px 14px;
+  padding: 0.2rem;
+}
+.hpBox {
+  margin-top: 2.2rem;
+  margin-bottom: 2rem;
+}
 
 @media (prefers-color-scheme: light) {
   ::before {
@@ -77,14 +91,20 @@ input#gsc-i-id1 {
 
   nav.menu > ul {
     background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 6px 12px;
   }
 
-  nav.menu > ul > li:hover > a,
-  nav.menu > ul > li:hover > span {
-    background: #85858559;
+  nav.menu > ul > li {
+    margin: 0.2rem;
+    padding: 0.2rem;
+  }
+  nav.menu > ul > li > a,
+  nav.menu > ul > li > span {
+    border-radius: 8px;
   }
   nav.menu > ul > li:hover > a,
   nav.menu > ul > li:hover > span {
+    background: rgba(228, 67, 100, 0.2);
     color: rgb(228, 67, 100) !important;
   }
   nav.menu > ul ul {
@@ -349,7 +369,7 @@ input#gsc-i-id1 {
     border-radius: 10px;
     margin: 0.2rem 0 0.2rem 0;
   }
-  .avatar > div > div {
+  .avatar > div > div:not(.avatarInfo) {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
   }
   .avatar > div > div > a:hover {
